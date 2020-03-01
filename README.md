@@ -5,6 +5,6 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 The purpose of this project is just to experiment with the latest web tech
 
 # Technology Used in This Project
-* React & bootstrap for frontend
-* Node.js with express for backend
-* And a bunch of other modules
+* React & Bootstrap for **Front-End**
+* Node with Express for **Back-End**
+* A bunch of other modules
