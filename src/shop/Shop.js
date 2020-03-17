@@ -20,7 +20,7 @@ export class Shop extends Component {
             />
           </div>
           <div className="col-9 p-2">
-            <ProductList products={this.props.products} />
+            <ProductList {...this.props} />
           </div>
         </div>
       </div>
