@@ -3,6 +3,10 @@ import { CategoryNavigation } from "./CategoryNavigation";
 import { ProductList } from "./ProductList";
 import { CartSummary } from "./CartSummary";
 export class Shop extends Component {
+  handleAddToCart = (...args) => {
+  this.props.addToCart(...args);
+  this.props.history.push("/shop/cart");
+  }
   render() {
     return (
       <div className="container-fluid">
@@ -20,7 +24,7 @@ export class Shop extends Component {
             />
           </div>
           <div className="col-9 p-2">
-            <ProductList {...this.props} />
+            <ProductList products={this.props.products} addToCart={this.handleAddToCart}/>
           </div>
         </div>
       </div>
