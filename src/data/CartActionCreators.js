@@ -1,6 +1,6 @@
-import { ActionTypes } from "./types";
+import { ActionTypes } from "./Types";
 
-export function addToCard(product, quantity = 1) {
+export function addToCart(product, quantity = 1) {
   return {
     type: ActionTypes.CART_ADD,
     payload: {
