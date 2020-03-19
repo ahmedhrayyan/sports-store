@@ -6,7 +6,6 @@ export class CartDetails extends Component {
 ${this.props.cartItems === 0 || !this.props.cartItems ? "disabled" : ""}`;
 
   render() {
-    console.log(this.props.cartItems)
     return (
       <div className="m-3">
         <h2 className="text-center">Your Cart</h2>
