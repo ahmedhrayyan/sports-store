@@ -4,8 +4,12 @@ import { RestDataSource } from "./RestDataSource";
 
 const dataSource = new RestDataSource();
 
-export const loadData = dataType => ({
+export const loadData = (dataType, params) => ({
   type: ActionTypes.DATA_LOAD,
-  payload: dataSource.GetData(dataType)
-    .then(response => ({dataType, data: response.data})),
+  payload: dataSource.GetData(dataType, params).then(response => ({
+    dataType,
+    data: response.data,
+    total: parseInt(response.headers["x-total-count"]),
+    params
+  }))
 });
