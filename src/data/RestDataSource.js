@@ -6,7 +6,7 @@ export class RestDataSource {
   }
 
   StoreData = (dataType, data) => {
-    this.SendRequest("post", RestUrls[dataType], {}, data);
+    return this.SendRequest("post", RestUrls[dataType], {}, data);
   }
 
   SendRequest = (method, url, params, data) => Axios.request({ method, url, params, data });
