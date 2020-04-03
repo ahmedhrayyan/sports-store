@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import { ValidationError } from "./ValidationError";
-import { GetMessages } from "./ValidationMessages";
+import { GetMessages } from "./GetMessages";
 export class ValidatedForm extends Component {
   constructor(props) {
     super(props);
