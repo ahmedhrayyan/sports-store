@@ -1,4 +1,5 @@
-import { graphql, compose } from "react-apollo";
+import {flowRight as compose} from 'lodash';
+import { graphql } from "react-apollo";
 import { ordersSummaryQuery } from "./clientQueries";
 import { OrdersTable } from "./OrdersTable";
 import { shipOrder } from "./clientMutations";
